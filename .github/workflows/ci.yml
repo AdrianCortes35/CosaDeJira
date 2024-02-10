@@ -2,7 +2,7 @@ name: Python CI
 
 on:
   push:
-    branches: [ main ]  # Cambia "main" si tu rama principal tiene otro nombre
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -21,3 +21,6 @@ jobs:
     - name: Run tests
       run: |
         python -m unittest test_suma.py
+        python -m unittest test_resta.py
+        python -m unittest test_multiplicacion.py
+        python -m unittest test_division.py
